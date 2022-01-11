@@ -1,45 +1,20 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# this folder contains the cache of angular when run in development
+.angular
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+# ============ editor ============
+# for JetBrains IDEs
+.idea
 
-# dependencies
-/node_modules
+# for Visual Studio Code
+.vscode
 
-# profiling files
-chrome-profiler-events*.json
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# ============ misc ============
+# for MacOS
 .DS_Store
+
+# for Windows
 Thumbs.db
+
+# ============ node ============
+# for node_modules
+node_modules
