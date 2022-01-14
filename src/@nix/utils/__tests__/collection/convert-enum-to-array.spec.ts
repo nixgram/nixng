@@ -1,5 +1,9 @@
 import { convertEnumToArray } from '../../objects.utils';
 
+/**
+ * Tests the convertEnumToArray function.
+ * */
+
 describe( 'Tests if convertEnumToArray works', () => {
 
   it( 'Should return an array', () => {
