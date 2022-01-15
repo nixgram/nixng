@@ -36,3 +36,8 @@ export function convertEnumToArray<T>(enumType: any, keyProp: string = 'id', val
 
   return result;
 }
+
+
+export function isObject( value: any ): boolean {
+  return value !== null && typeof value === 'object';
+}
