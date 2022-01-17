@@ -1,6 +1,7 @@
-<h1 align="center">nixng</h1>
+<div style="text-align: center">
+<h1>nixng</h1>
 
-<p align="center">
+<p>
   <img src="https://avatars.githubusercontent.com/u/91849603?s=200&v=4" alt="angular-logo" width="120px" height="120px"/>
   <br>
     Yet another angular skeleton. 🎉 <br> 
@@ -9,12 +10,12 @@ dependency, maximum productivity
   <br>
 </p>
 
-<p align="center">
+<p>
   <a href="https://www.github.io/nixgram/nixng"><strong>Visit website</strong></a>
   <br>
 </p>
 
-<p align="center">
+<p>
   <a href="CONTRIBUTING.md">Contributing Guidelines</a>
   ·
   <a href="https://github.com/nixgram/nixng/issues">Submit an Issue</a>
@@ -22,11 +23,12 @@ dependency, maximum productivity
   <br>
 </p>
 
-<p align="center">
+<p>
   <a href="https://www.npmjs.com/@angular/core">
     <img src="https://img.shields.io/npm/v/@angular/core.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="Angular on npm" />
   </a>
 </p>
+</div>
 
 <hr>
 
