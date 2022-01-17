@@ -3,35 +3,27 @@ import { hasValueInArray } from '@nix/utils/collection.utils';
 import { isValidDate } from '@nix/utils/date-time.utils';
 import { isObject } from '@nix/utils/objects.utils';
 
-export function markFormAsTouched( form: FormGroup, controls: string[] = [], touchNested: boolean ) {
+export function markFormAsTouched( params: { form: FormGroup, controls?: string[], touchNested?: boolean } ) {
+  const { form, controls, touchNested } = params;
+
   if ( controls.length === 0 ) {
     form.markAllAsTouched();
     return;
   }
 
-  controls.forEach( control => {
-    markControlAsTouched( form.get( control ), touchNested );
+  controls && controls.forEach( control => {
+    markControlAsTouched( {
+      control: form.get( control ),
+      touchNested
+    } );
   } );
 }
 
-export function markControlAsTouched( control: AbstractControl | FormControl, touchNested: boolean ) {
-  if ( touchNested ) {
-    control.markAllAsTouched();
-  } else {
-    control.markAsTouched();
-  }
+export function markControlAsTouched( params: { control: AbstractControl | FormControl, touchNested?: boolean } ) {
+  const { control, touchNested } = params;
+  touchNested ? control.markAllAsTouched() : control.markAsTouched();
 }
 
-
-/**
- * This function converts any object to formData
- *
- * @param formValue
- * @param form
- * @param namespace
- *
- * @returns {FormData}
- * */
 export function convertToFormData<T>( formValue: T, form: FormData = null, namespace = '' ): FormData {
   const formData = form || new FormData();
 
