@@ -11,7 +11,7 @@ export function markFormAsTouched( params: { form: FormGroup, controls?: string[
     return;
   }
 
-  controls && controls.forEach( control => {
+  hasValueInArray( controls ) && controls.forEach( control => {
     markControlAsTouched( {
       control: form.get( control ),
       touchNested
