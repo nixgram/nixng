@@ -34,7 +34,7 @@ dependency, maximum productivity
 
 ## Documentation
 
-Coming soon.
+Coming soon..
 
 ## Contributing
 
