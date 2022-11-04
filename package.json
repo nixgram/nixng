@@ -1,12 +1,15 @@
 {
   "name": "nixng",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "set NG_PERSISTENT_BUILD_CACHE=1 && ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "npx eslint src/**/*.{ts,html} --quiet --fix",
+    "format": "npx prettier src/**/*.{ts,html} --write",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -23,20 +26,36 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.1.2",
+    "@angular-devkit/build-angular": "^13.3.9",
+    "@angular-eslint/builder": "^14.1.2",
+    "@angular-eslint/eslint-plugin": "^14.1.2",
+    "@angular-eslint/eslint-plugin-template": "^14.1.2",
+    "@angular-eslint/template-parser": "^14.1.2",
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
     "autoprefixer": "^10.4.2",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lint-staged": "^12.4.1",
+    "ngc-esbuild": "^0.0.75",
     "postcss": "^8.4.5",
+    "prettier": "^2.6.2",
     "tailwindcss": "^3.0.13",
     "typescript": "~4.5.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
