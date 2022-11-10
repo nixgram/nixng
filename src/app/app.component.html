@@ -1,9 +1,30 @@
-<div class="h-screen flex justify-center items-center">
-  <h1 class="text-5xl font-bold">
-    This is
+<div class="absolute top-1 right-1 space-x-4">
+  <label for="language" class="text-white font-semibold">Translate in :</label>
+  <select
+    data-cy="language"
+    name="language"
+    id="language"
+    class="p-2 outline-none"
+    [(ngModel)]="selectedLanguage"
+    (change)="onLanguageChange($event)"
+  >
+    <option data-cy="en" value="en">English 🇺🇸</option>
+    <option data-cy="es" value="es">Spanish 🇪🇸</option>
+    <option data-cy="bn" value="bn">বাংলা 🇧🇩</option>
+  </select>
+</div>
+<div
+  class="h-screen flex justify-center items-center bg-slate-800"
+  *transloco="let translate"
+>
+  <h1
+    class="text-5xl font-bold text-white shadow-md shadow-slate-900 rounded-md p-4"
+  >
+    {{ translate('title') }}
     <span
       class="bg-gradient-to-r text-transparent from-violet-600 to-red-600 bg-clip-text"
-      >nixng</span
-    >
+      >nixng
+    </span>
+    🚀
   </h1>
 </div>
