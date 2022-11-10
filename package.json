@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "cypress-record":"npx cypress run --record --key b88452a5-7bd1-4b5e-873e-301699605f72",
+    "cypress-record": "npx cypress run --record --key b88452a5-7bd1-4b5e-873e-301699605f72",
     "start": "set NG_PERSISTENT_BUILD_CACHE=1 && ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^14.2.9",
     "@angular/platform-browser-dynamic": "^14.2.9",
     "@angular/router": "^14.2.9",
+    "@ngneat/transloco": "^4.1.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
