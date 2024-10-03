@@ -6,6 +6,3 @@
 | ------- | ------------------ |
 | 1.x.x   | :white_check_mark: |
 
-## Reporting a Vulnerability
-
-Coming soon

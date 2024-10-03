@@ -1,27 +1,55 @@
-# Nixng
+<div align="center">
+<h1>nixng</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+<p>
+  <img src="https://avatars.githubusercontent.com/u/91849603?s=200&v=4" alt="angular-logo" width="120px" height="120px"/>
+  <br>
+    Yet another angular skeleton. 🎉 <br> 
+    But, with all the things you need for your next enterprise level application. Minimum
+dependency, maximum productivity
+  <br>
+</p>
 
-## Development server
+<p>
+  <a href="https://www.github.io/nixgram/nixng"><strong>Visit website</strong></a>
+  <br>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p>
+  <a href="CONTRIBUTING.md">Contributing Guidelines</a>
+  ·
+  <a href="https://github.com/nixgram/nixng/issues">Submit an Issue</a>
+  <br>
+  <br>
+</p>
 
-## Code scaffolding
+<p>
+  <a href="https://www.npmjs.com/@angular/core">
+    <img src="https://img.shields.io/npm/v/@angular/core.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="Angular on npm" />
+  </a>
+</p>
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<hr>
 
-## Build
+## Documentation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Coming soon...
 
-## Running unit tests
+## Contributing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Contributing Guidelines
 
-## Running end-to-end tests
+Read through our [contributing guidelines](contributing) to learn about our submission process, coding rules and more.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Want to Help?
 
-## Further help
+Want to report a bug, contribute some code, or improve documentation? Excellent! Read up on our guidelines
+for [contributing](contributing).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Code of Conduct
+
+Help us keep nixng open and inclusive. Please read and follow our [Code of Conduct](code_of_conduct).
+
+[![Love Angular badge](https://img.shields.io/badge/angular-love-red?logo=angular&angular=love)](https://www.github.com/angular/angular)
+[![Love Tailwind badge](https://img.shields.io/badge/tailwindcss-love-blue?logo=tailwindcss&tailwind=love)](https://github.com/tailwindlabs/tailwindcss)

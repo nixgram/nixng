@@ -3,11 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  baseUrl: "",
-  TokenEndPoint: "",
-  BaseUrlLogin: ""
-
+    production: false,
+    defaultTitle: 'Nix gram',
+    navigationErrorTitle: 'Error occured',
+    navigationLoadingTitle: 'Loading...',
 };
 
 /*
