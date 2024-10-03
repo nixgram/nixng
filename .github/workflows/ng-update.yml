@@ -1,0 +1,14 @@
+name: 'Update Angular Action'
+on: # when the action should run. Can also be a CRON or in response to external events. see https://git.io/JeBz1
+  schedule:
+    - cron: '30 5 5,20 * *'
+
+jobs:
+  ngxUptodate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Updating ng dependencies # the magic happens here !
+        uses: fast-facts/ng-update@v1
+        with:
+          base-branch: master
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
